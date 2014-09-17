@@ -13,16 +13,15 @@ angular.module('frontend',
             controller: 'HeaderCtrl'
           }
         }
+      })
+      .state('root.welcome', {
+        url: '/',
+        views: {
+          'container@': {
+            templateUrl: 'partials/home.html',
+          }
+        }
       });
-      // .state('root.welcome', {
-      //   url: '/',
-      //   views: {
-      //     'container@': {
-      //       templateUrl: 'partials/welcome-panel.html',
-      //       controller: 'WelcomeCtrl'
-      //     }
-      //   }
-      // })
       // .state('root.loggedIn', {
       //   url: '/:jobcoinInputAddress',
       //   views: {
